@@ -1,0 +1,169 @@
+/* CardMaker.module.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Layout */
+/* Main Layout - Increase Spacing */
+main {
+    display: flex;
+    flex-direction: row; /* Ensures the form and card are side by side */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px; /* Increased space between form and card */
+    padding: 20px;
+}
+
+
+/* Form Styling */
+.form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form > .col {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(78, 71, 71, 0.384);
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #00bcd4;
+    box-shadow: 0px 0px 5px rgba(0, 188, 212, 0.5);
+}
+
+input::file-selector-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 0.5em;
+    border: transparent;
+    border-radius: 50px;
+    background-color: #ADD8E6;
+}
+
+/* Profile Card */
+#business__card {
+    width: 32em; /* Increased width */
+    min-height: 35em; /* Increased height to fit all fields */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: #e0ffff; /* Light Cyan background */
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid #00bcd4; /* Cyan Border */
+    padding: 20px;
+}
+
+/* Profile Card Header */
+#business__card-header {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00bcd4, #00e5ff);
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+/* Centering Image */
+#business__card-header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Profile Card Body */
+#business__card-body {
+    text-align: center;
+    padding: 80px 20px 20px; /* Extra space for the image */
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #00bcd4;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Download Button */
+#downloadBtn {
+    padding: 12px;
+    width: 90%;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 50px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+#downloadBtn:hover {
+    background-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #business__card {
+        width: 90%;
+        min-height: auto;
+    }
+}
