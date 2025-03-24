@@ -11,7 +11,7 @@ const PORT=1201;
 
 
 app.use(cors({
-    origin: "http://localhost:5176", 
+    origin: "*", 
     methods: ["GET", "POST", "PUT", "DELETE"],
   }));
 
